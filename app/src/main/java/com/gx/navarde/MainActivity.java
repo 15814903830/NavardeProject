@@ -617,6 +617,14 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
                         if (versionsBase.getData().getAndroid().getForce_update()==1){
                             tv_suspend.setVisibility(View.GONE);
                         }
+                        tv_suspend.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                dialog.dismiss();
+                            }
+                        });
+
+
                         tv_immediately.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
