@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>预约上门</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body>
+		<div class="make-an-appointment-content page-container" id="make-an-appointment-content">
+			
+			<!--标题栏占位-->
+			<div class="shop-details-header-h-1"></div>
+			
+			<!--标题栏-->
+			<div class="fixed-box-top">
+				<div class="title-header">
+					<span class="flex-box-x-l-y-c return-back">
+						<img src="img/return-icon.PNG" />
+					</span>
+					<h1>预约上门</h1>
+				</div>
+			</div>
+			
+			<!--添加商品弹窗-->
+			<div class="popup shop-add-popup">
+				<div class="shop-add-box">
+					<!--商品列表-->
+					<div class="shop-list">
+						<div class="content-box-2 margin-0">
+							<div class="shop-add-title flex-box-x-c-y-c">
+								<img src="img/footer-icon-5-on.png" />
+								<p>意向产品</p>
+							</div>
+							<div class="mescroll-style-1 infinite-scroll page-current content" data-distance="50">
+								<ul class="flex-box-x-z list-container"></ul>
+								<!-- 加载提示符 -->
+					          	<div class="infinite-scroll-preloader">
+						        	<div class="preloader"></div>
+					         	</div>
+							</div>
+						</div>
+					</div>
+					<div class="post-button-4" id="intention-shop-add-hide">完成</div>
+				</div>
+			</div>
+			
+			<div class="page-scrollView">
+				<!--内容表单-->
+				<div class="make-an-appointment-content-form">
+					<div class="content-box-2">
+						<div class="content-style-1 content-style-1-title flex-box-x-z">
+							<p>意向产品</p>
+							<span id="intention-shop-add">
+								<img src="img/add-icon.png" />
+							</span>
+						</div>
+						<div class="content-style-1 content-style-1-number flex-box-top" id="intent-product-list">
+							<div class="flex-box-x-l-y-c">
+								<p id="name"></p>
+								<!--<span>×1</span>-->
+							</div>
+						</div>
+						<input class="fillet-input-1" id="decoration-area" type="text" placeholder="请输入您的装修面积/m&sup2;（选填）" />
+					</div>
+					<div class="content-box-2">
+						<div class="form-input-1">
+							<label>预约姓名</label>
+							<input class="flex-1" id="contact" type="text" value="" placeholder="请输入您的姓名" />
+						</div>
+						<div class="form-input-1">
+							<label>联系电话</label>
+							<input class="flex-1" id="phone" type="text" value="" placeholder="请输入您的联系电话" />
+						</div>
+						<div class="form-input-1">
+							<label>服务地址</label>
+							<p class="flex-1 arrow-icon" id="jump_data_save"><a href="" class="color-style-1 text-overflow-1" id="address_appointment"></a></p>
+						</div>
+						<div class="form-input-1">
+							<label>上门时间</label>
+							<input class="color-style-1 flex-1 arrow-icon" type="text" id="select-home-time" value="请选择上门时间" />
+						</div>
+						<input class="fillet-input-1" id="memo" type="text" placeholder="如有特殊需要请备注" />
+					</div>
+				</div>
+				<div class="content-box-2 remind-text">
+					<span>温馨提示：</span>
+					<p>
+						您的预约上门提交后，上门人员会带意向产品实物上门，如若需取消服务，请提前24小时电话联系客服工作人员核实取消。
+					</p>
+				</div>
+			</div>
+			<!--底部占位-->
+			<div class="post-button-1-h"></div>
+			<!--底部提交-->
+			<div class="post-button-1 flex-box-x-c-y-c">
+				<p class="flex-box-x-c-y-c" id="confirm-reservation">确认预约</p>
+			</div>
+			
+		</div>
+	</body>
+</html>

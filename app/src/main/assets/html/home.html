@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body>
+		<div class="page-container page-current">
+			<div class="content-box home-content page-scrollView content infinite-scroll" data-distance="50" id="home-content">
+				
+				<!--搜索栏-->
+				<div class="flex-box home-header search-box">
+					<div class="flex-1 search-box-content-1">
+						<a href="search-for.html" class="search-for">
+							<button type="submit"><img src="img/search-icon.png" /></button>
+							<input class="flex-1" type="text" value="" placeholder="搜索商品名称"  />
+						</a>
+					</div>
+					<div class="news-icon flex-box search-box-content-2">
+						<a class="notice-icon" id="red-notice-icon" href="notice.html">
+							<img src="img/notice-icon.png"/>
+						</a>
+					</div>
+				</div>
+				
+				<!--logo-->
+				<div class="home-logo">
+					<img src="img/home-logo.png" />
+				</div>
+				
+				<!--轮播图-->
+				<div class="home-carousel" id="home-banner">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					</div>
+				</div>
+				
+				<!--选项跳转-->
+				<div class="home-option flex-box" id="home-option">
+					
+				</div>
+				
+				
+				<!--推荐分享-->
+				<div class="home-graphic-list">
+					<h2>推荐分享</h2>
+					<ul id="recommended-sharing">
+						
+					</ul>
+				</div>
+				
+				<!-- 加载提示符 -->
+	          	<div class="infinite-scroll-preloader display-no">
+		        	<div class="preloader"></div>
+	         	</div>
+				
+			</div>
+			
+			<!--底部占位-->
+			<div class="footer-height"></div>
+			<!--底部-->
+			<div class="footer flex-box-x-c-y-c">
+				<a href="home.html">
+					<img src="img/footer-icon-1-on.png" />
+					<span class="color-style-1">首页</span>
+				</a>
+				<a href="share-it.html">
+					<img src="img/footer-icon-2.png" />
+					<span>分享</span>
+				</a>
+				<a href="user.html">
+					<img src="img/footer-icon-3.png" />
+					<span>我的</span>
+				</a>
+			</div>
+		</div>
+	</body>
+	
+</html>

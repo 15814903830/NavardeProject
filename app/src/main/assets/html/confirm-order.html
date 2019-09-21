@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>确认订单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body>
+		<div class="invoice-content page-container display-no" id="invoice-content">
+
+			<!--标题栏占位-->
+			<div class="shop-details-header-h-1"></div>
+
+			<!--标题栏-->
+			<div class="fixed-box-top">
+				<div class="title-header">
+					<span class="flex-box-x-l-y-c return-back-2" id="invoice-back">
+						<img src="img/return-icon.PNG" />
+					</span>
+					<h1>发票</h1>
+					<p class="return-post flex-box-x-c-y-c" id="invoice-y">确定</p>
+				</div>
+			</div>
+
+			<!--信息设置-->
+			<div class="make-an-appointment-content-form page-scrollView">
+				<div class="content-box-3">
+					<div class="form-input-1 flex-box-top border-no line-height-auto">
+						<label style="width: 100%;margin-bottom: .4rem;">发票类型</label>
+						<p class="flex-box select-button-1 buttons-row">
+							<a href="#tab1" class="tab-link button flex-box-x-c-y-c active" data-invoice-type="1">个人</a>
+							<a href="#tab2" class="tab-link button flex-box-x-c-y-c" data-invoice-type="2">公司</a>
+						</p>
+					</div>
+					<div class="tabs" id="invoice-tab">
+						<div id="tab1" class="tab active">
+							<div class="form-input-1 border-no">
+								<input class="input-fillet-2" id="details-1" type="text" value="" placeholder="请输入发票抬头" data-invoice-title="发票抬头" />
+							</div>
+							<div class="form-input-1 border-no">
+								<input class="input-fillet-2" id="details-2" type="text" value="" placeholder="请输入证件号码" data-invoice-title="证件号码" />
+							</div>
+						</div>
+						<div id="tab2" class="tab">
+							<div class="form-input-1 border-no">
+								<input class="input-fillet-2" id="details-1" type="text" value="" placeholder="请输入发票抬头" data-invoice-title="发票抬头" />
+							</div>
+							<div class="form-input-1 border-no">
+								<input class="input-fillet-2" id="details-2" type="text" value="" placeholder="请输入纳税人识别号" data-invoice-title="纳税人识别号" />
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="confirm-order-content page-container" id="confirm-order-content">
+			
+			<!--标题栏占位-->
+			<div class="shop-details-header-h-1"></div>
+			
+			<!--标题栏-->
+			<div class="fixed-box-top">
+				<div class="title-header">
+					<span class="flex-box-x-l-y-c return-back">
+						<img src="img/return-icon.PNG" />
+					</span>
+					<h1>确认订单</h1>
+				</div>
+			</div>
+			
+			<!--添加商品弹窗-->
+			<div class="popup shop-add-popup">
+				<div class="shop-add-box">
+					<!--商品列表-->
+					<div class="shop-list">
+						<div class="content-box-2 margin-0">
+							<div class="shop-add-title flex-box-x-c-y-c">
+								<img src="img/footer-icon-5-on.png" />
+								<p>辅料选择</p>
+							</div>
+							<div class="mescroll-style-1 infinite-scroll page-current content" data-distance="50">
+								<ul class="flex-box-x-z list-container"></ul>
+								<!-- 加载提示符 -->
+					          	<div class="infinite-scroll-preloader">
+						        	<div class="preloader"></div>
+					         	</div>
+							</div>
+						</div>
+					</div>
+					<div class="post-button-4" id="confirm-shop-add-hide">完成</div>
+				</div>
+			</div>
+			
+			<div class="page-scrollView">
+				
+				<!--确认订单详情-->
+				<div class="content-box-2 add-address-href">
+					<div class="form-input-1" id="jump_data_save">
+						<p class="flex-1 margin-t-b-1 arrow-icon">
+							<a href="address-list-add.html" id="address_appointment" data-address-id="" class="color-style-1 font-size-1 text-overflow-1"></a>
+						</p>
+					</div>
+				</div>
+				<div class="content-box-3">
+					<div class="form-input-1 order-details-username">
+						<img src="img/logo-mini.png" />
+						<p>财纳沃德</p>
+					</div>
+					<div class="flex-box-x-z-no-w margin-t-1">
+						<div class="order-details-shop-img bg-auto" id="shop-details-img">
+						</div>
+						<div class="order-details-shop-1 flex-1 flex-box">
+							<p class="content-top" id="shop-details-name"></p>
+							<span class="content-bottom">&yen;<b id="shop-details-price"></b>/<b id="shop-details-unit"></b></span>
+						</div>
+					</div>
+				</div>
+				<div class="content-box-3">
+					<div class="form-input-1 border-no" id="confirm-shop-add">
+						<label class="line-height-auto color-style-2">辅料选择</label>
+						<p class="color-style-1 flex-1 margin-0 arrow-icon"></p>
+					</div>
+					<div id="excipient-list">
+						
+					</div>
+				</div>
+				<div class="content-box-2">
+					<div class="form-input-1">
+						<label class="color-style-2">购买面积(m&sup2;)</label>
+						<input class="flex-1 text-align-r" id="area" type="number" min="0" value="" placeholder="请输入购买面积" />
+					</div>
+					<div class="form-input-1">
+						<label class="color-style-2">配送时间</label>
+						<input class="color-style-2 flex-1 text-align-r margin-0" type="text" id="select-delivery-time" placeholder="请选择配送时间" />
+					</div>
+					<div class="form-input-1 border-no padding-style-4">
+						<label class="color-style-2">发票</label>
+						<p class="flex-1 text-align-r-2 margin-0 arrow-icon"><span class="color-style-2" id="invoice-switch">不需要</span></p>
+					</div>
+					<div class="box-form-1 installation-form margin-t-2" id="invoice-form">
+						<div class="form-input-1 border-color-baise">
+							<label class="color-style-2 width-2" id="invoice-title-1"></label>
+							<p class="color-style-2 flex-1 text-align-r margin-0 text-br" id="invoice-details-1"></p>
+						</div>
+						<div class="form-input-1 border-no">
+							<label class="color-style-2 width-2" id="invoice-title-2"></label>
+							<p class="color-style-2 flex-1 text-align-r margin-0 text-br" id="invoice-details-2"></p>
+						</div>
+					</div>
+					<div class="border-1"></div>
+					<div class="form-input-1 border-no padding-style-4">
+						<label class="color-style-2">是否需要安装&nbsp;&nbsp;<b class="min-size-1">(安装费用按&yen;20/m&sup2;估算)</b></label>
+						<p class="color-style-2 flex-1 text-align-r-2 margin-0 arrow-icon" id="installation-switch">否</p>
+					</div>
+					<div class="box-form-1 installation-form margin-t-2" id="installation-form">
+						<div class="form-input-1 border-color-baise">
+							<label class="color-style-2 width-2">预计安装面积(m&sup2;)</label>
+							<input class="flex-1 text-align-r background-no" id="installation-area" type="number" value="" placeholder="点击输入安装面积" />
+						</div>
+						<div class="form-input-1 border-no">
+							<label class="color-style-2 width-2">预计安装费用(&yen;)</label>
+							<p class="color-style-2 flex-1 text-align-r margin-0">&yen;<span id="installation-fee">0.00</span></p>
+						</div>
+					</div>
+					<div class="border-1"></div>
+					<div class="remind-text color-style-1 flex-box-x-z-no-w margin-y-75">
+						<span class="color-style-1">温馨提示：</span>
+						<p class="flex-1">
+							安装费用非线上支付，订单提交后，客服专员会电话联系确认安装事宜，请保持联系电话畅通
+						</p>
+					</div>
+				</div>
+				<div class="content-box-3">
+					<div class="form-input-1">
+						<label class="color-style-2">辅料费</label>
+						<p class="color-style-1 flex-1 text-align-r margin-0">&yen;<span class="color-style-1" id="accessories-money">0.00</span></p>
+					</div>
+					<div class="form-input-1">
+						<label class="color-style-2">材料费</label>
+						<p class="color-style-1 flex-1 text-align-r margin-0">&yen;<span class="color-style-1" id="material-money">0.00</span></p>
+					</div>
+					<div class="form-input-1">
+						<label class="color-style-2">配送费(默认包邮)</label>
+						<p class="color-style-1 flex-1 text-align-r margin-0">&yen;<span class="color-style-1" id="delivery-money">0.00</span></p>
+					</div>
+					<div class="form-input-1 border-no">
+						<label class="color-style-2">商品总价</label>
+						<p class="color-style-1 flex-1 text-align-r margin-0">&yen;<span class="color-style-1" id="all-money">0.00</span></p>
+					</div>
+				</div>
+				<div class="content-box-3">
+					<div class="form-input-1 border-no">
+						<label class="color-style-2">
+							<span>选择支付方式</span>
+						</label>
+					</div>
+					<div id="pay-select">
+						<div class="form-input-1 flex-box-x-z-no-w" data-pay-id="3">
+							<label class="color-style-2 flex-box-x-l-y-c">
+								<img class="pay-icon-1" src="img/offline-pay.PNG" />
+								<span>线下付款</span>
+							</label>
+							<p class="confirm-circle-icon-1"></p>
+						</div>
+						<div class="form-input-1 flex-box-x-z-no-w" data-pay-id="2">
+							<label class="color-style-2 flex-box-x-l-y-c">
+								<img class="pay-icon-1" src="img/weixin-pay.png" />
+								<span>微信支付</span>
+							</label>
+							<p class="confirm-circle-icon-1"></p>
+						</div>
+						<div class="form-input-1 flex-box-x-z-no-w" data-pay-id="1">
+							<label class="color-style-2 flex-box-x-l-y-c">
+								<img class="pay-icon-1" src="img/zhifubao-pay.PNG" />
+								<span>支付宝支付</span>
+							</label>
+							<p class="confirm-circle-icon-1"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部占位-->
+			<div class="shop-details-footer-h"></div>
+			
+			<!--底部支付-->
+			<div class="shop-details-footer flex-box-x-z-y-c">
+				<p class="confirm-pay-number flex-box-x-l-y-c">
+					<span>实付:</span>
+					<span id="actually-paid">0.00</span>
+				</p>
+				<span class="confirm-pay-button flex-box-x-c-y-c" id="submit-orders">
+					提交订单
+				</span>
+			</div>
+			
+		</div>
+	</body>
+</html>

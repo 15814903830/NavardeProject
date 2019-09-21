@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>搜索结果</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body>
+		<div class="search-for-rear-content page-container page-current" id="search-for-rear-content">
+			<!--搜索栏占位-->
+			<div class="shop-search-box-h-2"></div>
+			<div class="shop-search-box">
+				<!--搜索栏-->
+				<div class="padding-style-1">
+					<div class="flex-box search-box">
+						<div class="flex-1">
+							<a class="search-for" href="search-for.html">
+								<span class="search-for-active text-overflow-1" id="search-for-title"></span>
+							</a>
+						</div>
+						<div class="search-cancel search-box-content-2">
+							<a href="home.html"><b>取消</b></a>
+						</div>
+					</div>
+				</div>
+				<!--商品筛选-->
+				<!--<div class="shop-filter">
+					<ul class="flex-box-x-z-y-c" id="search-for-shop-list">
+						<li class="shop-filter-active" id="sum-up">综合</li>
+						<li id="sales-volume">销量</li>
+						<li id="new-product">新品</li>
+						<li class="price-filter" id="price">价格</li>
+					</ul>
+				</div>-->
+			</div>
+			<!--商品列表-->
+			<div class="shop-list page-scrollView content infinite-scroll" data-distance="50">
+				<div class="content-box">
+					<ul class="flex-box-x-z" id="search-for-rear-details">
+						
+					</ul>
+					
+					<!-- 加载提示符 -->
+		          	<div class="infinite-scroll-preloader display-no">
+			        	<div class="preloader"></div>
+		         	</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

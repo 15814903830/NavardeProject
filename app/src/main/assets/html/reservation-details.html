@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>预约详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body>
+		<div class="order-details-content page-container" id="reservation-details-content">
+			
+			<!--标题栏占位-->
+			<div class="shop-details-header-h-1"></div>
+			
+			<!--标题栏-->
+			<div class="fixed-box-top">
+				<div class="title-header">
+					<span class="flex-box-x-l-y-c return-back">
+						<img src="img/return-icon.PNG" />
+					</span>
+					<h1>预约详情</h1>
+				</div>
+			</div>
+			
+			<div class="page-scrollView">
+				<!--订单详情-->
+				<div class="content-box-2"></div>
+				
+				<div class="content-box-3">
+					<div class="form-input-2">
+						<label class="line-height-auto color-style-3 min-size-2" id="reservation-details-logistics"></label>
+					</div>
+					<div class="form-input-2 order-details-shop" id="order-details-shop-list">
+						
+					</div>
+					<div class="order-details-operating flex-box-x-z-y-c flex-box-top">
+						<div class="content-left">
+							<p class="flex-box">
+								总计：<span class="color-style-3"><i id="a-shop-number"></i>件商品</span>
+							</p>
+						</div>
+						<div class="content-right flex-box-top">
+							<!--<a class="post-button-2" id="view-logistics">查看物流</a>-->
+							<a href="customer-service.html" class="post-button-2">联系客服</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-box-3 delivery-address line-height-auto">
+					<h2>服务地址</h2>
+					<p>
+						<span id="user-name"></span>
+						<span id="user-tel"></span>
+					</p>
+					<span id="address"></span>
+				</div>
+				
+				
+				<div class="content-box-3 shop-details-text order-details-content-text-list">
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">预约时间</label>
+						<span class="color-style-2 content-right" id="time"></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">处理时间</label>
+						<span class="color-style-2 content-right" id="handle_time"></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">装修面积</label>
+						<span class="color-style-2 content-right" id="area"></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">备注</label>
+						<span class="color-style-2 content-right" id="memo"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

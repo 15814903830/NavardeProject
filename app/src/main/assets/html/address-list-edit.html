@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>收货地址修改</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/sm-city-picker.min.js" ></script>
+	</head>
+	<body>
+		<div class="address-list-add-content page-container" id="address-list-edit-content">
+			
+			<!--标题栏占位-->
+			<div class="shop-details-header-h-1"></div>
+			
+			<!--标题栏-->
+			<div class="fixed-box-top">
+				<div class="title-header">
+					<span class="flex-box-x-l-y-c return-back">
+						<img src="img/return-icon.PNG" />
+					</span>
+					<h1>收货地址修改</h1>
+					<p class="return-post flex-box-x-c-y-c" id="address-save">保存</p>
+				</div>
+			</div>
+			
+			<!--地址添加-->
+			<div class="make-an-appointment-content-form page-scrollView">
+				<div class="content-box-2">
+					<div class="form-input-1">
+						<label>收货人&nbsp;&nbsp;&nbsp;</label>
+						<input id="recipient" class="flex-1" type="text" value="" />
+					</div>
+					<div class="form-input-1">
+						<label>手机号码</label>
+						<input id="phone" class="flex-1" type="text" value="" />
+					</div>
+					<div class="form-input-1">
+						<label>所在地区</label>
+						<input class="flex-1 arrow-icon" id="regional-choice" type="text" value="" readonly="readonly" />
+					</div>
+					<div class="form-input-1 border-no">
+						<textarea id="address" placeholder="详细地址：如门牌号、小区、楼栋号等" rows="6"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

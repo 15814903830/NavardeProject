@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>商品详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body class="sui-new-style">
+		<div class="shop-details-content page-container" id="shop-details-content">
+			
+			<!--标题栏占位-->
+			<div class="shop-details-header-h-1"></div>
+			
+			<!--标题栏-->
+			<div class="fixed-box-top">
+				<div class="title-header">
+					<span class="flex-box-x-l-y-c return-back">
+						<img src="img/return-icon.PNG" />
+					</span>
+					<h1>商品详情</h1>
+				</div>
+			</div>
+			
+			<div class="page-scrollView" id="page-scrollView">
+				<!--轮播图-->
+				<div class="shop-details-carousel">
+					<a class="panoramic panoramic-entrance display-no">
+						<img src="img/panoramic-icon.PNG" />
+					</a>
+					<div class="swiper-container">
+					    <div class="swiper-wrapper" id="shop-details-banner">
+					    	
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					</div>
+				</div>
+				
+				<!--商品参数-->
+				<div class="content-box">
+					<div class="line-height-2">
+						<div class="shop-details-title" id="shop-details-title"></div>
+						<div class="shop-details-text flex-box" id="shop-details-keyword"></div>
+						<div class="shop-prices flex-box">
+							<p><i>&yen;</i><b id="price"></b><i class="shop-details-unit"></i></p>
+							<span class="flex-box-y-b"><i>&yen;</i><b id="origin-price"></b><b class="shop-details-unit"></b></span>
+						</div>
+						<a class="shop-details-vr-banner panoramic-entrance display-no">
+							<img src="img/shop-details-vr-banner.png" />
+						</a>
+					</div>
+				</div>
+				
+				<!--相关推荐-->
+				<div class="content-box shop-related-suggestion shop-list">
+					<h1>相关推荐</h1>
+					<ul class="flex-box-top" id="shop-related-suggestion">
+						
+					</ul>
+				</div>
+				
+				<!--商品信息选项卡-->
+				<div class="shop-details-tab">
+					<div class="buttons-tab" id="buttons-tab">
+					    <a href="#tab1" class="tab-link button active">详情介绍</a>
+					    <a href="#tab2" class="tab-link button">商品参数</a>
+					    <a href="#tab3" class="tab-link button">售后说明</a>
+					  </div>
+					  <div class="content-block">
+					    <div class="tabs">
+					      <div id="tab1" class="content-details tab active">
+					          
+					      </div>
+					      <div id="tab2" class="content-parameter tab">
+				          	<div class="content-box flex-box-top">
+					          	
+				          	</div>
+					      </div>
+					      <div id="tab3" class="content-after-sale tab">
+					        <div class="content-box">
+					        	
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+				</div>
+			</div>
+			
+			<!--底部占位-->
+			<div class="shop-details-footer-h"></div>
+			
+			<!--底部-->
+			<div class="shop-details-footer">
+				<ul class="flex-box-x-c-y-c">
+					<li class="flex-box-x-c-y-c">
+						<p id="shop-details-clothing">
+							<a>
+								<img src="img/footer-icon-4.png" />
+								<span>客服</span>
+							</a>
+						</p>
+						<p id="collection-shop">
+							<img src="img/footer-icon-5.png" />
+							<span>&nbsp;</span>
+						</p>
+					</li>
+					<li class="flex-box-x-c-y-c"><a id="make-an-appointment" href="make-an-appointment.html">预约上门</a></li>
+					<li class="flex-box-x-c-y-c"><a id="confirm-order" href="confirm-order.html">立即购买</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

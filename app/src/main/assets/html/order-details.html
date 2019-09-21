@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>订单详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body>
+		<div class="order-details-content page-container" id="order-details-content">
+			
+			<!--标题栏占位-->
+			<div class="shop-details-header-h-1"></div>
+			
+			<!--标题栏-->
+			<div class="fixed-box-top">
+				<div class="title-header">
+					<span class="flex-box-x-l-y-c return-back">
+						<img src="img/return-icon.PNG" />
+					</span>
+					<h1>订单详情</h1>
+				</div>
+			</div>
+			
+			<div class="page-scrollView">
+				<!--订单详情-->
+				<div class="content-box-2"></div>
+				
+				<div class="content-box-3">
+					<div class="form-input-2">
+						<label class="line-height-auto color-style-3 min-size-2" id="order-details-logistics"></label>
+					</div>
+					<div class="form-input-2 order-details-shop" id="order-details-shop-list">
+						
+					</div>
+					<div class="order-details-operating flex-box-x-l-y-c flex-box-top">
+						<div class="content-left">
+							<p class="flex-box">
+								<span class="">共<i id="num"></i>件商品</span>&nbsp;&nbsp;
+							</p>
+						</div>
+						<div class="content-left">
+							<p class="flex-box">
+								总计：<span class="color-style-3">&yen;<i id="amount"></i></span>
+							</p>
+						</div>
+						<!--<div class="content-right flex-box-top">
+							<a class="post-button-2" id="view-logistics">查看物流</a>
+							<a href="customer-service.html" class="post-button-2">联系客服</a>
+						</div>-->
+					</div>
+				</div>
+				<div class="content-box-3 delivery-address line-height-auto">
+					<h2>配送地址</h2>
+					<p>
+						<span id="user-name"></span>
+						<span id="user-tel"></span>
+					</p>
+					<span id="address"></span>
+				</div>
+				
+				<!--<div class="content-box-3 shop-logistics order-details-content-text-list">
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">物流状态</label>
+						<span class="color-style-2 content-right" id="logistics-information"></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">物流单号</label>
+						<span class="color-style-2 content-right" id="logistics-number"></span>
+					</div>
+				</div>-->
+				
+				<div class="content-box-3 shop-details-text order-details-content-text-list margin-0">
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">订单号</label>
+						<span class="color-style-2 content-right" id="payment_no"></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">支付方式</label>
+						<span class="color-style-2 content-right" id="payment_type"></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">配送时间</label>
+						<span class="color-style-2 content-right" id="delivery_time"></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">下单时间</label>
+						<span class="color-style-2 content-right" id="create_time"></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">发货时间</label>
+						<span class="color-style-2 content-right"><i id="ship_time"></i></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">材料费</label>
+						<span class="color-style-2 content-right">&yen;<i id="material_fee"></i></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">辅料费</label>
+						<span class="color-style-2 content-right">&yen;<i id="excipient_fee"></i></span>
+					</div>
+					<div class="flex-box-x-z text-list">
+						<label class="content-left">运费</label>
+						<span class="color-style-2 content-right">&yen;<i id="payment_no"></i>0.00</span>
+					</div>
+					<div class="flex-box-x-z text-list zongji">
+						<label class="content-left">总计</label>
+						<span class="color-style-2 content-right">&yen;<i id="total"></i></span>
+					</div>
+					
+					<div class="order-details-operating flex-box-x-r-y-c flex-box-top margin-t-1">
+						<div class="content-right flex-box-top">
+							<span class="post-button-2 background-no border-2 color-style-1 display-no" id="confirm-receipt">确认收货</span>
+							<a href="customer-service.html" class="post-button-2">联系客服</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

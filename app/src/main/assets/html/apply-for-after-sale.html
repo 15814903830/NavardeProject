@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>售后服务</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/sm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/sm.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body>
+		<div class="apply-for-after-sale-content page-container" id="apply-for-after-sale-content">
+			
+			<!--标题栏占位-->
+			<div class="shop-details-header-h-1"></div>
+			
+			<!--标题栏-->
+			<div class="fixed-box-top">
+				<div class="title-header">
+					<span class="flex-box-x-l-y-c return-back">
+						<img src="img/return-icon.PNG" />
+					</span>
+					<h1>售后服务</h1>
+					<p class="return-post flex-box-x-c-y-c" id="post-sale-submission">提交</p>
+				</div>
+			</div>
+			<div class="page-scrollView">
+				<!--售后内容-->
+				<div class="margin-t-1 content-box-3 flex-box-x-z-y-c">
+					<div class="content-title">订单号</div>
+					<div class="color-style-2 content-text" id="order_no"></div>
+				</div>
+				<div class="margin-t-1 content-box-3 flex-box-x-z-y-c flex-box-top">
+					<div class="content-title margin-b-1">售后原因</div>
+					<textarea class="the-reason content-text margin-b-1" placeholder="请清晰详细描述售后的原因" rows="6" id="apply-for-after-sale-text"></textarea>
+					<div class="upload-attachment">
+						<div class="content-title margin-b-1">上传图片</div>
+						<div class="flex-box-top" id="img-box">
+							<label class="upload-attachment-icon" for="upload-attachment" id="upload-attachment-icon">
+								<img src="img/upload-attachment-icon.png" />
+							</label>
+							<input type="file" id="upload-attachment" style="display: none;" accept="image/*" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

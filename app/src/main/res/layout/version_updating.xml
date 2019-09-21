@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/version"
+        android:layout_width="280dp"
+        android:layout_height="180dp">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            android:text="版本更新"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/tv_text"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:text="提示内容"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="34dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_suspend_for_immediately"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_suspend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="暂不更新"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+            <View
+                android:background="#E6E6E6"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_immediately"
+                android:textSize="15sp"
+                android:textColor="#E2BD8A"
+                android:gravity="center"
+                android:text="立即更新"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_time"
+                android:gravity="center"
+                android:textColor="#E2BD8A"
+                android:text="正在更新中0%，请勿关闭APP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>
